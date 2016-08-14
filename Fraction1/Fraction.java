@@ -9,5 +9,14 @@ public class Fraction {
 	public void setDenominator(int d){
 		this.denominator=d;
 	}
+	
+	public int getNumerator(){
+		return numerator;
+	}
+
+	public int getDenominator(){
+		return denominator;
+	}
+}
 
 
