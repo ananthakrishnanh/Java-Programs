@@ -17,6 +17,10 @@ public class Fraction {
 	public int getDenominator(){
 		return denominator;
 	}
+
+	public void print(){
+		System.out.println("The fraction is " + this.getNumerator() + "/"   + this.getDenominator());
+	}
 }
 
 
