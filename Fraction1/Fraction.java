@@ -31,7 +31,10 @@ public class Fraction {
 	}
 
 	public void print(){
-		System.out.println("The fraction is " + this.getNumerator() + "/"   + this.getDenominator());
+		if(this.getDenominator()==1)
+			System.out.println("The fraction is " + this.getNumerator());
+		else 
+			System.out.println("The fraction is " + this.getNumerator() + "/"   + this.getDenominator());
 	}
 }
 
