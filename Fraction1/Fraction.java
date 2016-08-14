@@ -2,11 +2,17 @@ public class Fraction {
 	private int numerator;
 	private int denominator;
 
-    Fraction(int n,int d)
+	Fraction()
+	{
+		this.numerator=1;
+		this.denominator=1;
+	}
+
+    /*Fraction(int n,int d)
     {
         this.numerator=n;
         this.denominator=d;
-    }
+    }*/
 
 	public void setNumerator(int n){
 		this.numerator=n;
