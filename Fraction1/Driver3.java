@@ -12,5 +12,9 @@ class Driver3{
 		Fraction f4 = new Fraction(3,12);
 		f4.reduce();
 		f4.print();
+
+		Fraction f5 = new Fraction(5,6);
+		f5.print();
+		f5.computeInverse().print();
 	}
 }

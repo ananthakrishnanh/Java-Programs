@@ -41,6 +41,11 @@ public class Fraction {
 		this.numerator=temp;	
 	}
 
+	public Fraction computeInverse(){
+		Fraction inv = new Fraction(this.denominator,this.numerator);
+		return inv;
+	}
+
 	
 
 	public boolean isProper(){
@@ -79,6 +84,19 @@ public class Fraction {
 			System.out.println("The fraction is " + 					this.getNumerator());
 		else 
 			System.out.println("The fraction is " + 					this.getNumerator() + "/" + 						this.getDenominator());
+	}
+
+	public Fraction add(Fraction frac){
+		//only fraction with same base
+		int fracsum;
+		if(this.denominator==frac.getDenominator()){
+			fracsum=this.numerator+frac.getNumerator();
+			Fraction sum=new Fraction(fracsum,this.denominator);
+			return sum;
+		}
+		else
+			return null;
+		
 	}
 }
 
